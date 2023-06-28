@@ -5,7 +5,7 @@ import React, {
   useCallback,
   useState,
 } from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { Todo } from '../../types/Todo';
 import { updateTodo } from '../../api/todos';
 
@@ -71,12 +71,13 @@ export const TodoItem: React.FC<Props> = memo(({
 
   return (
     <div
-      className={classNames('todo', {
+      className={classnames('todo', {
         completed: todo.completed,
       })}
     >
-      <label className="todo__status-label">
+      <label className="todo__status-label" htmlFor="checkBox">
         <input
+          id="checkBox"
           type="checkbox"
           className="todo__status"
           checked={todo.completed}

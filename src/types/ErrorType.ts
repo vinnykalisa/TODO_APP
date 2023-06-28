@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-shadow
 export enum ErrorType {
   'Add' = 'Unable to add todo',
   'Delete' = 'Unable to delete todo',

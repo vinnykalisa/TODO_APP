@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { Filter } from '../../types/Filter';
 
 interface Props {
@@ -12,7 +12,7 @@ export const TodoFilter: React.FC<Props> = ({ filterBy, setFilterBy }) => {
     <nav className="filter">
       <a
         href="#/"
-        className={classNames('filter__link',
+        className={classnames('filter__link',
           { selected: filterBy === Filter.All })}
         onClick={(event) => {
           event.preventDefault();

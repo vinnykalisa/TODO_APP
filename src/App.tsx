@@ -4,7 +4,7 @@ import React, {
   useCallback,
   useEffect,
 } from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { UserWarning } from './UserWarning';
 import { Todo } from './types/Todo';
 import {
@@ -191,7 +191,7 @@ export const App: React.FC = () => {
           { todos.length > 0 && (
             <button
               type="button"
-              className={classNames('todoapp__toggle-all', {
+              className={classnames('todoapp__toggle-all', {
                 hidden: !todos.length,
                 active: !activeCount,
               })}

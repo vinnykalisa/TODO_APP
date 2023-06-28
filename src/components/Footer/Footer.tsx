@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { TodoFilter } from '../TodoFilter';
 import { Filter } from '../../types/Filter';
 
@@ -31,7 +31,7 @@ export const Footer: React.FC<Props> = ({
 
       <button
         type="button"
-        className={classNames('todoapp__clear-completed', {
+        className={classnames('todoapp__clear-completed', {
           hidden: !isCompleted,
         })}
         onClick={clearCompleted}
